@@ -1,12 +1,1339 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
-]]--
+-- this is open source for now
+-- Instances: 25 | Scripts: 7 | Modules: 0 | Tags: 0
+local G2L = {};
 
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==81) then v19=v0(v3(v30,1,1));return "";else local v66=v2(v0(v30,16));if v19 then local v76=0;local v77;while true do if (v76==0) then v77=v5(v66,v19);v19=nil;v76=1;end if (v76==1) then return v77;end end else return v66;end end end);local function v20(v31,v32,v33) if v33 then local v67=(v31/((5 -3)^(v32-(2 -(878 -(282 + 595))))))%((3 -1)^(((v33-(2 -1)) -(v32-(620 -(555 + 64)))) + 1)) ;return v67-(v67%((2569 -(1523 + 114)) -(857 + 74))) ;else local v68=0;local v69;while true do if (v68==(568 -(367 + 201))) then v69=(929 -(214 + 713))^(v32-1) ;return (((v31%(v69 + v69))>=v69) and (1 + 0)) or (0 + 0) ;end end end end local function v21() local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22() local v35,v36=v1(v16,v18,v18 + 2 + 0 );v18=v18 + (1067 -(68 + 997)) ;return (v36 * 256) + v35 ;end local function v23() local v37=0;local v38;local v39;local v40;local v41;while true do if (v37==((1621 -(87 + 263)) -(226 + 1044))) then return (v41 * (73054774 -56277558)) + (v40 * (65653 -(32 + 85))) + (v39 * (251 + 5)) + v38 ;end if (v37==(0 + 0)) then v38,v39,v40,v41=v1(v16,v18,v18 + ((1140 -(67 + 113)) -(892 + 65)) );v18=v18 + (9 -5) ;v37=1 -(0 -0) ;end end end local function v24() local v42=v23();local v43=v23();local v44=1 + (1138 -(116 + 1022)) ;local v45=(v20(v43,2 -1 ,20) * ((3 -(4 -3))^(24 + 5 + 3))) + v42 ;local v46=v20(v43,(302 -219) -62 ,983 -(802 + 150) );local v47=((v20(v43,100 -68 )==(2 -1)) and  -1) or 1 ;if (v46==0) then if (v45==(0 -0)) then return v47 * (0 + 0) ;else v46=3 -2 ;v44=0 + 0 ;end elseif (v46==(3044 -((3249 -2334) + 82))) then return ((v45==(0 -0)) and (v47 * ((1 + (859 -(814 + 45)))/(0 -0)))) or (v47 * NaN) ;end return v8(v47,v46-(2210 -(1069 + 118)) ) * (v44 + (v45/((4 -2)^(824 -(201 + 571))))) ;end local function v25(v48) local v49=0 -0 ;local v50;local v51;while true do if ((1 + 1)==v49) then v51={};for v78=1 + 0 , #v50 do v51[v78]=v2(v1(v3(v50,v78,v78)));end v49=888 -(261 + 624) ;end if (v49==(1 -0)) then v50=v3(v16,v18,(v18 + v48) -((3721 -2640) -(1020 + 60)) );v18=v18 + v48 ;v49=1425 -(630 + (2540 -(760 + 987))) ;end if (v49==(9 -6)) then return v6(v51);end if (v49==(1913 -(1789 + 124))) then v50=nil;if  not v48 then v48=v23();if (v48==(0 -0)) then return "";end end v49=1 + 0 ;end end end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v52=(function() return 0 -0 ;end)();local v53=(function() return;end)();local v54=(function() return;end)();local v55=(function() return;end)();local v56=(function() return;end)();local v57=(function() return;end)();local v58=(function() return;end)();while true do if (v52~=(562 -(306 + 254))) then else for v80= #":",v23() do local v81=(function() return v21();end)();if (v20(v81, #" ", #"|")==(0 -0)) then local v101=(function() return 0 -0 ;end)();local v102=(function() return;end)();local v103=(function() return;end)();local v104=(function() return;end)();while true do if (v101==(868 -(550 + 317))) then local v115=(function() return 0 -0 ;end)();while true do if (v115==1) then v101=(function() return 2 -0 ;end)();break;end if ((0 -0)==v115) then v104=(function() return {v22(),v22(),nil,nil};end)();if (v102==0) then local v125=(function() return 0;end)();while true do if (v125==(285 -(134 + 151))) then v104[ #"xxx"]=(function() return v22();end)();v104[ #"asd1"]=(function() return v22();end)();break;end end elseif (v102== #"}") then v104[ #"nil"]=(function() return v23();end)();elseif (v102==(2 + 0)) then v104[ #"91("]=(function() return v23() -((4 -2)^(1681 -(970 + 695))) ;end)();elseif (v102== #"xnx") then local v130=(function() return 0 -0 ;end)();local v131=(function() return;end)();while true do if (v130==(290 -(60 + 230))) then v131=(function() return 1990 -(582 + 1408) ;end)();while true do if (v131==(572 -(426 + 146))) then v104[ #"-19"]=(function() return v23() -(2^(55 -39)) ;end)();v104[ #"?id="]=(function() return v22();end)();break;end end break;end end end v115=(function() return 1 -0 ;end)();end end end if ((1458 -(282 + 1174))~=v101) then else if (v20(v103, #"!", #":")== #"<") then v104[2]=(function() return v58[v104[2]];end)();end if (v20(v103,813 -(569 + 242) ,7 -5 )~= #":") then else v104[ #"19("]=(function() return v58[v104[ #"91("]];end)();end v101=(function() return 1827 -(1195 + 629) ;end)();end if ((3 -0)==v101) then if (v20(v103, #"19(", #"19(")== #",") then v104[ #"http"]=(function() return v58[v104[ #"0313"]];end)();end v53[v80]=(function() return v104;end)();break;end if (v101==(0 -0)) then local v117=(function() return 0 + 0 ;end)();while true do if (0==v117) then v102=(function() return v20(v81,2, #"xxx");end)();v103=(function() return v20(v81, #"asd1",6);end)();v117=(function() return 1;end)();end if (v117==(1025 -(706 + 318))) then v101=(function() return 242 -(187 + 54) ;end)();break;end end end end end end for v82= #">",v23() do v54[v82-#"~" ]=(function() return v28();end)();end return v56;end if ( #" "~=v52) then else local v70=(function() return 0;end)();while true do if (v70==(780 -(162 + 618))) then v57=(function() return v23();end)();v58=(function() return {};end)();v70=(function() return 1 + 0 ;end)();end if (v70==(1 + 0)) then for v106= #":",v57 do local v107=(function() return 0 -0 ;end)();local v108=(function() return;end)();local v109=(function() return;end)();local v110=(function() return;end)();while true do if (v107==(0 -0)) then v108=(function() return 0;end)();v109=(function() return nil;end)();v107=(function() return 1 + 0 ;end)();end if (v107==(1 + 0)) then v110=(function() return nil;end)();while true do if (v108~=(1500 -(1408 + 92))) then else local v123=(function() return 1086 -(461 + 625) ;end)();while true do if (v123==(1288 -(993 + 295))) then v109=(function() return v21();end)();v110=(function() return nil;end)();v123=(function() return 1;end)();end if (v123==(1637 -(1373 + 263))) then v108=(function() return 1172 -(418 + 753) ;end)();break;end end end if (v108~=(1001 -(451 + 549))) then else if (v109== #"[") then v110=(function() return v21()~=0 ;end)();elseif (v109==(1 + 1)) then v110=(function() return v24();end)();elseif (v109~= #"asd") then else v110=(function() return v25();end)();end v58[v106]=(function() return v110;end)();break;end end break;end end end v56[ #"19("]=(function() return v21();end)();v70=(function() return 2 -0 ;end)();end if ((2 -0)==v70) then v52=(function() return 1386 -(746 + 638) ;end)();break;end end end if (v52~=(0 + 0)) then else local v71=(function() return 0;end)();local v72=(function() return;end)();while true do if (v71==(0 + 0)) then v72=(function() return 0 -0 ;end)();while true do if (v72==(343 -(218 + 123))) then v52=(function() return  #"/";end)();break;end if (v72~=(1582 -(1535 + 46))) then else v55=(function() return {};end)();v56=(function() return {v53,v54,nil,v55};end)();v72=(function() return 531 -(406 + 123) ;end)();end if (v72==0) then v53=(function() return {};end)();v54=(function() return {};end)();v72=(function() return 1;end)();end end break;end end end end end local function v29(v59,v60,v61) local v62=0 + 0 ;local v63;local v64;local v65;while true do if (v62==(1769 -(1749 + 20))) then v63=v59[1 + (0 -0) ];v64=v59[(585 -(361 + 219)) -3 ];v62=1323 -(1249 + 73) ;end if ((18<=2112) and (v62==(1 + 0))) then v65=v59[1148 -(466 + 679) ];return function(...) local v84=v63;local v85=v64;local v86=v65;local v87=v27;local v88=1 + 0 ;local v89= -(1 + 0);local v90={};local v91={...};local v92=v12("#",...) -((321 -(53 + 267)) -0) ;local v93={};local v94={};for v98=0 -0 ,v92 do if (v98>=v86) then v90[v98-v86 ]=v91[v98 + (1901 -(106 + 1794)) ];else v94[v98]=v91[v98 + 1 + 0 + 0 ];end end local v95=(v92-v86) + (414 -(15 + 398)) + (982 -(18 + 964)) ;local v96;local v97;while true do v96=v84[v88];v97=v96[2 -1 ];if (v97<=(2 -1)) then if (v97>(114 -(4 + 110))) then v94[v96[2]]={};else do return;end end elseif (v97>(586 -(57 + 527))) then v94[v96[1429 -(41 + 1386) ]]={};else do return;end end v88=v88 + (104 -(17 + (323 -237))) ;end end;end end end return v29(v28(),{},v17)(...);end return v15("LOL!5Q00024Q00038Q00023Q00017Q00",v9(),...);
+-- StarterGui.zynx
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[zynx]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.zynx.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["2"]["Size"] = UDim2.new(0, 415, 0, 475);
+G2L["2"]["Position"] = UDim2.new(0.55099, 0, 0.31296, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["BackgroundTransparency"] = 0.2;
+
+
+-- StarterGui.zynx.Frame.UIDrag
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+G2L["3"]["Name"] = [[UIDrag]];
+
+
+-- StarterGui.zynx.Frame.TextLabel
+G2L["4"] = Instance.new("TextLabel", G2L["2"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["BackgroundTransparency"] = 0.5;
+G2L["4"]["Size"] = UDim2.new(0, 415, 0, 17);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[zynx v1.00 UI placeholder]];
+
+
+-- StarterGui.zynx.Frame.Frame
+G2L["5"] = Instance.new("Frame", G2L["2"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Size"] = UDim2.new(0, 196, 0, 432);
+G2L["5"]["Position"] = UDim2.new(0.03133, 0, 0.05895, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["BackgroundTransparency"] = 0.8;
+
+
+-- StarterGui.zynx.Frame.Frame.boxtitle
+G2L["6"] = Instance.new("TextLabel", G2L["5"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0, 88, 0, 17);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[box]];
+G2L["6"]["Name"] = [[boxtitle]];
+G2L["6"]["Position"] = UDim2.new(0.23469, 0, 0.07721, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.nametitle
+G2L["7"] = Instance.new("TextLabel", G2L["5"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(0, 88, 0, 17);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[name]];
+G2L["7"]["Name"] = [[nametitle]];
+G2L["7"]["Position"] = UDim2.new(0.23469, 0, 0.21864, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.highlighttitle
+G2L["8"] = Instance.new("TextLabel", G2L["5"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Size"] = UDim2.new(0, 88, 0, 17);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[highlight]];
+G2L["8"]["Name"] = [[highlighttitle]];
+G2L["8"]["Position"] = UDim2.new(0.23469, 0, 0.14479, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.highlight
+G2L["9"] = Instance.new("TextButton", G2L["5"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["Size"] = UDim2.new(0, 15, 0, 15);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[]];
+G2L["9"]["Name"] = [[highlight]];
+G2L["9"]["Position"] = UDim2.new(0.68367, 0, 0.0787, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.highlight.ESPScript
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
+G2L["a"]["Name"] = [[ESPScript]];
+
+
+-- StarterGui.zynx.Frame.Frame.name
+G2L["b"] = Instance.new("TextButton", G2L["5"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 15, 0, 15);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[]];
+G2L["b"]["Name"] = [[name]];
+G2L["b"]["Position"] = UDim2.new(0.68367, 0, 0.21759, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.name.NameESPScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+G2L["c"]["Name"] = [[NameESPScript]];
+
+
+-- StarterGui.zynx.Frame.Frame.realHighlight
+G2L["d"] = Instance.new("TextButton", G2L["5"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["Size"] = UDim2.new(0, 15, 0, 15);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[]];
+G2L["d"]["Name"] = [[realHighlight]];
+G2L["d"]["Position"] = UDim2.new(0.68367, 0, 0.14815, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.realHighlight.HighlightScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+G2L["e"]["Name"] = [[HighlightScript]];
+
+
+-- StarterGui.zynx.Frame.Frame.esptitle
+G2L["f"] = Instance.new("TextLabel", G2L["5"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["BackgroundTransparency"] = 0.5;
+G2L["f"]["Size"] = UDim2.new(0, 196, 0, 26);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[esp]];
+G2L["f"]["Name"] = [[esptitle]];
+G2L["f"]["Position"] = UDim2.new(0, 0, -0.00127, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.aimtitle
+G2L["10"] = Instance.new("TextLabel", G2L["5"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(14, 14, 14);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundTransparency"] = 0.5;
+G2L["10"]["Size"] = UDim2.new(0, 196, 0, 26);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[aim]];
+G2L["10"]["Name"] = [[aimtitle]];
+G2L["10"]["Position"] = UDim2.new(0, 0, 0.28114, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.aimbotTitle
+G2L["11"] = Instance.new("TextLabel", G2L["5"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["11"]["TextScaled"] = true;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundTransparency"] = 1;
+G2L["11"]["Size"] = UDim2.new(0, 88, 0, 17);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[aimbot]];
+G2L["11"]["Name"] = [[aimbotTitle]];
+G2L["11"]["Position"] = UDim2.new(0.23469, 0, 0.36193, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.aimbot
+G2L["12"] = Instance.new("TextButton", G2L["5"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0, 15, 0, 15);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[]];
+G2L["12"]["Name"] = [[aimbot]];
+G2L["12"]["Position"] = UDim2.new(0.68367, 0, 0.36343, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.aimbot.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.zynx.Frame.Frame.autoaim
+G2L["14"] = Instance.new("TextButton", G2L["5"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 15, 0, 15);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[]];
+G2L["14"]["Name"] = [[autoaim]];
+G2L["14"]["Position"] = UDim2.new(0.68367, 0, 0.42824, 0);
+
+
+-- StarterGui.zynx.Frame.Frame.autoaim.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+
+
+
+-- StarterGui.zynx.Frame.Frame.autoaimtitle
+G2L["16"] = Instance.new("TextLabel", G2L["5"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Size"] = UDim2.new(0, 88, 0, 17);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[auto-aim]];
+G2L["16"]["Name"] = [[autoaimtitle]];
+G2L["16"]["Position"] = UDim2.new(0.23469, 0, 0.42212, 0);
+
+
+-- StarterGui.zynx.Frame.Close
+G2L["17"] = Instance.new("TextButton", G2L["2"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 113, 113);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 11, 0, 11);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[]];
+G2L["17"]["Name"] = [[Close]];
+G2L["17"]["Position"] = UDim2.new(0.967, 0, 0.006, 0);
+
+
+-- StarterGui.zynx.Frame.Close.LocalScript
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+
+
+
+-- StarterGui.zynx.Frame.Close.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["17"]);
+G2L["19"]["CornerRadius"] = UDim.new(0, 1355135104);
+
+
+-- StarterGui.zynx.Frame.UIDrag
+local function C_3()
+local script = G2L["3"];
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end;
+task.spawn(C_3);
+-- StarterGui.zynx.Frame.Frame.highlight.ESPScript
+local function C_a()
+local script = G2L["a"];
+	-- ESP Toggle Script
+	local Players = game:GetService("Players")
+	local StarterGui = game:GetService("StarterGui")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	-- Find the highlight button
+	local highlightButton = script.Parent
+	if not highlightButton or highlightButton.Name ~= "highlight" then
+	    warn("ESP script must be parented to a TextButton named 'highlight'")
+	    return
+	end
+	
+	-- ESP state
+	local espEnabled = false
+	local espBoxes = {} -- Store ESP boxes for each player
+	
+	-- Function to create ESP box for a player
+	local function createESPBox(character)
+	    if not character or not character.PrimaryPart then return end
+	    
+	    -- Create a BillboardGui for the ESP box
+	    local billboard = Instance.new("BillboardGui")
+	    billboard.Name = "ESPBox"
+	    billboard.Adornee = character.PrimaryPart
+	    billboard.Size = UDim2.new(4, 0, 6, 0)
+	    billboard.StudsOffset = Vector3.new(0, 1, 0)
+	    billboard.AlwaysOnTop = true
+	    billboard.Parent = character
+	    
+	    -- Create the frame
+	    local frame = Instance.new("Frame")
+	    frame.Name = "ESPFrame"
+	    frame.Size = UDim2.new(1, 0, 1, 0)
+	    frame.BackgroundTransparency = 1
+	    frame.BorderSizePixel = 0
+	    frame.Parent = billboard
+	    
+	    -- Create the border
+	    local border = Instance.new("UIStroke")
+	    border.Name = "ESPBorder"
+	    border.Color = Color3.new(1, 1, 1) -- White color
+	    border.Thickness = 3
+	    border.Transparency = 0.23 -- 1 - 0.6 = 0.4 transparency
+	    border.Parent = frame
+	    
+	    return billboard
+	end
+	
+	-- Function to remove ESP box for a player
+	local function removeESPBox(character)
+	    if not character then return end
+	    
+	    local espBox = character:FindFirstChild("ESPBox")
+	    if espBox then
+	        espBox:Destroy()
+	    end
+	end
+	
+	-- Function to toggle ESP
+	local function toggleESP()
+	    espEnabled = not espEnabled
+	    
+	    if espEnabled then
+	        -- ESP ON - Set button to green
+	        highlightButton.BackgroundColor3 = Color3.new(0, 1, 0) -- Green
+	        
+	        -- Create ESP boxes for all current players
+	        for _, player in Players:GetPlayers() do
+	            if player ~= Players.LocalPlayer and player.Character then
+	                local espBox = createESPBox(player.Character)
+	                if espBox then
+	                    espBoxes[player] = espBox
+	                end
+	            end
+	        end
+	    else
+	        -- ESP OFF - Set button to red
+	        highlightButton.BackgroundColor3 = Color3.new(1, 0, 0) -- Red
+	        
+	        -- Remove all ESP boxes
+	        for _, espBox in pairs(espBoxes) do
+	            if espBox and espBox.Parent then
+	                espBox:Destroy()
+	            end
+	        end
+	        espBoxes = {}
+	        
+	        -- Remove any remaining ESP boxes from characters
+	        for _, player in Players:GetPlayers() do
+	            if player.Character then
+	                removeESPBox(player.Character)
+	            end
+	        end
+	    end
+	end
+	
+	-- Set initial button color to red (off)
+	highlightButton.BackgroundColor3 = Color3.new(1, 0, 0)
+	
+	-- Connect button click
+	highlightButton.MouseButton1Click:Connect(toggleESP)
+	
+	-- Handle new players joining - ESP stays on until disabled
+	Players.PlayerAdded:Connect(function(player)
+	    -- Always connect CharacterAdded for new players
+	    player.CharacterAdded:Connect(function(character)
+	        -- Only apply ESP if it's currently enabled
+	        if espEnabled then
+	            local espBox = createESPBox(character)
+	            if espBox then
+	                espBoxes[player] = espBox
+	            end
+	        end
+	    end)
+	end)
+	
+	-- Handle existing players' characters spawning/despawning - ESP stays on until disabled
+	for _, player in Players:GetPlayers() do
+	    if player ~= Players.LocalPlayer then
+	        player.CharacterAdded:Connect(function(character)
+	            -- Only apply ESP if it's currently enabled
+	            if espEnabled then
+	                local espBox = createESPBox(character)
+	                if espBox then
+	                    espBoxes[player] = espBox
+	                end
+	            end
+	        end)
+	        
+	        player.CharacterRemoving:Connect(function(character)
+	            removeESPBox(character)
+	            espBoxes[player] = nil
+	        end)
+	    end
+	end
+	
+	-- Handle local player's character (don't show ESP on self)
+	local localPlayer = Players.LocalPlayer
+	if localPlayer then
+	    localPlayer.CharacterAdded:Connect(function(character)
+	        removeESPBox(character) -- Ensure no ESP on local player
+	    end)
+	end
+end;
+task.spawn(C_a);
+-- StarterGui.zynx.Frame.Frame.name.NameESPScript
+local function C_c()
+local script = G2L["c"];
+	-- Name ESP Toggle Script (Fixed - Head Version)
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	-- Find the name button
+	local nameButton = script.Parent
+	if not nameButton or nameButton.Name ~= "name" then
+	    warn("Name ESP script must be parented to a TextButton named 'name'")
+	    return
+	end
+	
+	-- Name ESP state
+	local nameESPEnabled = false
+	local nameLabels = {} -- Store name labels for each player
+	
+	-- Function to create name label for a player
+	local function createNameLabel(character, player)
+	    if not character then return end
+	    
+	    -- Find the Head part specifically
+	    local head = character:FindFirstChild("Head")
+	    if not head then return end
+	    
+	    -- Create a BillboardGui for the name label
+	    local billboard = Instance.new("BillboardGui")
+	    billboard.Name = "NameESP"
+	    billboard.Adornee = head
+	    billboard.Size = UDim2.new(0, 150, 0, 40)
+	    billboard.StudsOffset = Vector3.new(0, 2, 0) -- 2 studs above head
+	    billboard.AlwaysOnTop = true
+	    billboard.Parent = head
+	    
+	    -- Create the text label
+	    local label = Instance.new("TextLabel")
+	    label.Name = "NameLabel"
+	    label.Size = UDim2.new(1, 0, 1, 0)
+	    label.Position = UDim2.new(0, 0, 0, 0)
+	    label.BackgroundTransparency = 1 -- Completely transparent background
+	    label.BorderSizePixel = 0
+	    label.Text = player.Name
+	    label.TextColor3 = Color3.new(1, 1, 1) -- White color
+	    label.TextSize = 20 -- Good readable size
+	    label.Font = Enum.Font.RobotoMono
+	    label.TextStrokeTransparency = 0.5 -- Light stroke for visibility
+	    label.TextStrokeColor3 = Color3.new(0, 0, 0) -- Black stroke
+	    label.TextScaled = false -- Use fixed size
+	    label.Parent = billboard
+	    
+	    return billboard
+	end
+	
+	-- Function to remove name label for a player
+	local function removeNameLabel(character)
+	    if not character then return end
+	    
+	    local head = character:FindFirstChild("Head")
+	    if head then
+	        local nameLabel = head:FindFirstChild("NameESP")
+	        if nameLabel then
+	            nameLabel:Destroy()
+	        end
+	    end
+	end
+	
+	-- Function to toggle name ESP
+	local function toggleNameESP()
+	    nameESPEnabled = not nameESPEnabled
+	    
+	    if nameESPEnabled then
+	        -- Name ESP ON - Set button to green
+	        nameButton.BackgroundColor3 = Color3.new(0, 1, 0) -- Green
+	        
+	        -- Create name labels for all current players
+	        for _, player in Players:GetPlayers() do
+	            if player ~= Players.LocalPlayer and player.Character then
+	                local nameLabel = createNameLabel(player.Character, player)
+	                if nameLabel then
+	                    nameLabels[player] = nameLabel
+	                end
+	            end
+	        end
+	    else
+	        -- Name ESP OFF - Set button to red
+	        nameButton.BackgroundColor3 = Color3.new(1, 0, 0) -- Red
+	        
+	        -- Remove all name labels
+	        for _, nameLabel in pairs(nameLabels) do
+	            if nameLabel and nameLabel.Parent then
+	                nameLabel:Destroy()
+	            end
+	        end
+	        nameLabels = {}
+	        
+	        -- Remove any remaining name labels from characters
+	        for _, player in Players:GetPlayers() do
+	            if player.Character then
+	                removeNameLabel(player.Character)
+	            end
+	        end
+	    end
+	end
+	
+	-- Set initial button color to red (off)
+	nameButton.BackgroundColor3 = Color3.new(1, 0, 0)
+	
+	-- Connect button click
+	nameButton.MouseButton1Click:Connect(toggleNameESP)
+	
+	-- Handle new players joining - ESP stays on until disabled
+	Players.PlayerAdded:Connect(function(player)
+	    -- Always connect CharacterAdded for new players
+	    player.CharacterAdded:Connect(function(character)
+	        -- Only apply name ESP if it's currently enabled
+	        if nameESPEnabled then
+	            local nameLabel = createNameLabel(character, player)
+	            if nameLabel then
+	                nameLabels[player] = nameLabel
+	            end
+	        end
+	    end)
+	end)
+	
+	-- Handle existing players' characters spawning/despawning - ESP stays on until disabled
+	for _, player in Players:GetPlayers() do
+	    if player ~= Players.LocalPlayer then
+	        player.CharacterAdded:Connect(function(character)
+	            -- Only apply name ESP if it's currently enabled
+	            if nameESPEnabled then
+	                local nameLabel = createNameLabel(character, player)
+	                if nameLabel then
+	                    nameLabels[player] = nameLabel
+	                end
+	            end
+	        end)
+	        
+	        player.CharacterRemoving:Connect(function(character)
+	            removeNameLabel(character)
+	            nameLabels[player] = nil
+	        end)
+	    end
+	end
+	
+	-- Handle local player's character (don't show name ESP on self)
+	local localPlayer = Players.LocalPlayer
+	if localPlayer then
+	    localPlayer.CharacterAdded:Connect(function(character)
+	        removeNameLabel(character) -- Ensure no name ESP on local player
+	    end)
+	end
+end;
+task.spawn(C_c);
+-- StarterGui.zynx.Frame.Frame.realHighlight.HighlightScript
+local function C_e()
+local script = G2L["e"];
+	-- Highlight Toggle Script
+	local Players = game:GetService("Players")
+	local StarterGui = game:GetService("StarterGui")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	-- Find the realHighlight button
+	local highlightButton = script.Parent
+	if not highlightButton or highlightButton.Name ~= "realHighlight" then
+	    warn("Highlight script must be parented to a TextButton named 'realHighlight'")
+	    return
+	end
+	
+	-- Highlight state
+	local highlightEnabled = false
+	local highlights = {} -- Store highlights for each player
+	
+	-- Function to create highlight for a player
+	local function createHighlight(character)
+	    if not character then return end
+	    
+	    -- Create a Highlight instance
+	    local highlight = Instance.new("Highlight")
+	    highlight.Name = "PlayerHighlight"
+	    highlight.FillColor = Color3.new(1, 1, 1) -- White color
+	    highlight.FillTransparency = 0.45
+	    highlight.OutlineColor = Color3.new(1, 1, 1) -- White color
+	    highlight.OutlineTransparency = 0 -- 0 stroke transparency
+	    highlight.Parent = character
+	    
+	    return highlight
+	end
+	
+	-- Function to remove highlight for a player
+	local function removeHighlight(character)
+	    if not character then return end
+	    
+	    local highlight = character:FindFirstChild("PlayerHighlight")
+	    if highlight then
+	        highlight:Destroy()
+	    end
+	end
+	
+	-- Function to toggle highlight
+	local function toggleHighlight()
+	    highlightEnabled = not highlightEnabled
+	    
+	    if highlightEnabled then
+	        -- Highlight ON - Set button to green
+	        highlightButton.BackgroundColor3 = Color3.new(0, 1, 0) -- Green
+	        
+	        -- Create highlights for all current players
+	        for _, player in Players:GetPlayers() do
+	            if player ~= Players.LocalPlayer and player.Character then
+	                local highlight = createHighlight(player.Character)
+	                if highlight then
+	                    highlights[player] = highlight
+	                end
+	            end
+	        end
+	    else
+	        -- Highlight OFF - Set button to red
+	        highlightButton.BackgroundColor3 = Color3.new(1, 0, 0) -- Red
+	        
+	        -- Remove all highlights
+	        for _, highlight in pairs(highlights) do
+	            if highlight and highlight.Parent then
+	                highlight:Destroy()
+	            end
+	        end
+	        highlights = {}
+	        
+	        -- Remove any remaining highlights from characters
+	        for _, player in Players:GetPlayers() do
+	            if player.Character then
+	                removeHighlight(player.Character)
+	            end
+	        end
+	    end
+	end
+	
+	-- Set initial button color to red (off)
+	highlightButton.BackgroundColor3 = Color3.new(1, 0, 0)
+	
+	-- Connect button click
+	highlightButton.MouseButton1Click:Connect(toggleHighlight)
+	
+	-- Handle new players joining - ESP stays on until disabled
+	Players.PlayerAdded:Connect(function(player)
+	    -- Always connect CharacterAdded for new players
+	    player.CharacterAdded:Connect(function(character)
+	        -- Only apply highlight if it's currently enabled
+	        if highlightEnabled then
+	            local highlight = createHighlight(character)
+	            if highlight then
+	                highlights[player] = highlight
+	            end
+	        end
+	    end)
+	end)
+	
+	-- Handle existing players' characters spawning/despawning - ESP stays on until disabled
+	for _, player in Players:GetPlayers() do
+	    if player ~= Players.LocalPlayer then
+	        player.CharacterAdded:Connect(function(character)
+	            -- Only apply highlight if it's currently enabled
+	            if highlightEnabled then
+	                local highlight = createHighlight(character)
+	                if highlight then
+	                    highlights[player] = highlight
+	                end
+	            end
+	        end)
+	        
+	        player.CharacterRemoving:Connect(function(character)
+	            removeHighlight(character)
+	            highlights[player] = nil
+	        end)
+	    end
+	end
+	
+	-- Handle local player's character (don't show highlight on self)
+	local localPlayer = Players.LocalPlayer
+	if localPlayer then
+	    localPlayer.CharacterAdded:Connect(function(character)
+	        removeHighlight(character) -- Ensure no highlight on local player
+	    end)
+	end
+end;
+task.spawn(C_e);
+-- StarterGui.zynx.Frame.Frame.aimbot.LocalScript
+local function C_13()
+local script = G2L["13"];
+	-- Parent this LocalScript directly under your GUI button
+	local Button = script.Parent
+	
+	-- Services
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+	local Workspace = game:GetService("Workspace")
+	local LocalPlayer = Players.LocalPlayer
+	local Camera = workspace.CurrentCamera
+	
+	-- Settings
+	local AimActive = false
+	local CurrentTarget = nil
+	local Locked = false
+	local Smoothness = 0.35 -- Increased for stronger lock-on
+	local FOVRadius = 230
+	local FOVCircle = nil
+	
+	-- Create FOV circle
+	local function CreateFOV()
+		FOVCircle = Drawing.new("Circle")
+		FOVCircle.Visible = false
+		FOVCircle.Transparency = 0.8
+		FOVCircle.Color = Color3.new(1, 1, 1) -- Pure white
+		FOVCircle.Thickness = 2.6
+		FOVCircle.NumSides = 64
+		FOVCircle.Radius = FOVRadius
+		FOVCircle.Filled = false
+	end
+	
+	-- Check if player is alive
+	local function IsAlive(player)
+		if not player.Character then return false end
+		local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+		return humanoid and humanoid.Health > 0
+	end
+	
+	-- Get random body part (torso or head)
+	local function GetTargetBodyPart(character)
+		if not character then return nil end
+	
+		local bodyParts = {
+			character:FindFirstChild("UpperTorso"),
+			character:FindFirstChild("Torso"),
+			character:FindFirstChild("Head")
+		}
+	
+		local validParts = {}
+		for _, part in ipairs(bodyParts) do
+			if part then
+				table.insert(validParts, part)
+			end
+		end
+	
+		if #validParts > 0 then
+			return validParts[math.random(1, #validParts)]
+		end
+	
+		return character:FindFirstChild("HumanoidRootPart")
+	end
+	
+	-- Check if target is above the local player
+	local function IsAboveLocalPlayer(targetPart)
+		if not LocalPlayer.Character then return false end
+		local localTorso = LocalPlayer.Character:FindFirstChild("UpperTorso") or LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+		if not localTorso then return false end
+	
+		local heightDifference = targetPart.Position.Y - localTorso.Position.Y
+		return heightDifference > -5
+	end
+	
+	-- Check line of sight - NO WALLBANG, proper wall detection
+	local function HasLineOfSight(targetPart)
+		if not LocalPlayer.Character or not targetPart then return false end
+	
+		local cameraPos = Camera.CFrame.Position
+		local targetPos = targetPart.Position
+		local direction = (targetPos - cameraPos).Unit
+		local distance = (targetPos - cameraPos).Magnitude
+	
+		-- Don't target if too far
+		if distance > 500 then return false end
+	
+		local raycastParams = RaycastParams.new()
+		raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+		raycastParams.FilterDescendantsInstances = {LocalPlayer.Character}
+		raycastParams.IgnoreWater = true
+	
+		local raycastResult = Workspace:Raycast(cameraPos, direction * distance, raycastParams)
+	
+		-- If raycast hits nothing, we have clear line of sight
+		if not raycastResult then
+			return true
+		end
+	
+		-- Check if what we hit is the target player
+		local hitPart = raycastResult.Instance
+		local hitCharacter = hitPart:FindFirstAncestorWhichIsA("Model")
+	
+		-- If we hit the target player, we have line of sight
+		if hitCharacter and hitCharacter == targetPart.Parent then
+			return true
+		end
+	
+		-- If we hit something else (wall, object), NO line of sight
+		return false
+	end
+	
+	-- Find target in FOV with proper wall detection
+	local function GetTargetInFOV()
+		if Locked and CurrentTarget and IsAlive(CurrentTarget) then
+			local targetPart = GetTargetBodyPart(CurrentTarget.Character)
+			if targetPart and HasLineOfSight(targetPart) then
+				return CurrentTarget
+			else
+				CurrentTarget = nil
+				Locked = false
+			end
+		end
+	
+		local center = Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y/2)
+		local closestDist = math.huge
+		local closestPlayer = nil
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer and IsAlive(player) and player.Character then
+				local targetPart = GetTargetBodyPart(player.Character)
+				if targetPart then
+					if not IsAboveLocalPlayer(targetPart) then
+						continue
+					end
+	
+					local pos, onScreen = Camera:WorldToViewportPoint(targetPart.Position)
+					if onScreen then
+						local screenPos = Vector2.new(pos.X, pos.Y)
+						local dist = (screenPos - center).Magnitude
+						if dist <= FOVRadius and dist < closestDist then
+							-- CHECK LINE OF SIGHT BEFORE TARGETING
+							if HasLineOfSight(targetPart) then
+								closestDist = dist
+								closestPlayer = player
+							end
+						end
+					end
+				end
+			end
+		end
+	
+		return closestPlayer
+	end
+	
+	-- Stronger smooth aim with better lock-on
+	local function AimAtTarget()
+		if not CurrentTarget or not CurrentTarget.Character then 
+			Locked = false
+			return 
+		end
+	
+		local targetPart = GetTargetBodyPart(CurrentTarget.Character)
+		if not targetPart then 
+			CurrentTarget = nil
+			Locked = false
+			return 
+		end
+	
+		-- Check if target is still alive AND has line of sight
+		if not IsAlive(CurrentTarget) or not HasLineOfSight(targetPart) then
+			CurrentTarget = nil
+			Locked = false
+			return
+		end
+	
+		local currentCF = Camera.CFrame
+		local cameraPos = currentCF.Position
+		local targetPos = targetPart.Position
+	
+		-- Add slight offset for head/torso
+		if targetPart.Name == "Head" then
+			targetPos = targetPos + Vector3.new(0, -0.3, 0) -- Center of head
+		elseif targetPart.Name == "UpperTorso" or targetPart.Name == "Torso" then
+			targetPos = targetPos + Vector3.new(0, 0.8, 0) -- Upper chest
+		end
+	
+		-- STRONGER LOCK-ON: Direct interpolation with dynamic speed
+		local currentLook = currentCF.LookVector
+		local targetDir = (targetPos - cameraPos).Unit
+	
+		-- Calculate angle to target
+		local angleToTarget = math.acos(math.clamp(currentLook:Dot(targetDir), -1, 1))
+	
+		-- Dynamic smoothness: very fast when far, slower when close
+		local dynamicSmoothness = Smoothness
+		if angleToTarget > 0.8 then -- Very far from target
+			dynamicSmoothness = Smoothness * 2.0 -- Fast acquisition
+		elseif angleToTarget > 0.3 then -- Medium distance
+			dynamicSmoothness = Smoothness * 1.5
+		else -- Close to target
+			dynamicSmoothness = Smoothness * 0.9 -- Tight lock
+		end
+	
+		-- Strong linear interpolation for better lock-on
+		local newLook = currentLook:Lerp(targetDir, dynamicSmoothness)
+	
+		-- Apply with slight smoothing to avoid jitter
+		Camera.CFrame = CFrame.new(cameraPos, cameraPos + newLook)
+	end
+	
+	-- Main loop
+	local function AimbotLoop()
+		if FOVCircle then
+			FOVCircle.Position = Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y/2)
+			FOVCircle.Visible = AimActive
+		end
+	
+		if AimActive and UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton2) then
+			if not Locked then
+				CurrentTarget = GetTargetInFOV()
+				if CurrentTarget then
+					Locked = true
+				end
+			end
+	
+			if Locked and CurrentTarget then
+				AimAtTarget()
+			end
+		else
+			Locked = false
+			CurrentTarget = nil
+		end
+	end
+	
+	-- Toggle function with button color changes
+	local function ToggleAimbot()
+		AimActive = not AimActive
+	
+		if AimActive then
+			-- Enable - green
+			Button.BackgroundColor3 = Color3.new(0, 1, 0) -- Full green
+	
+			if not FOVCircle then
+				CreateFOV()
+			end
+			FOVCircle.Visible = true
+			RunService:BindToRenderStep("AimbotLoop", 1, AimbotLoop)
+		else
+			-- Disable - red
+			Button.BackgroundColor3 = Color3.new(1, 0, 0) -- Full red
+	
+			if FOVCircle then
+				FOVCircle.Visible = false
+			end
+			RunService:UnbindFromRenderStep("AimbotLoop")
+			CurrentTarget = nil
+			Locked = false
+		end
+	end
+	
+	-- Connect button
+	Button.MouseButton1Click:Connect(ToggleAimbot)
+	
+	-- Initial button state: starts off red (disabled)
+	Button.BackgroundColor3 = Color3.new(1, 0, 0) -- Full red
+	
+	-- Cleanup
+	Button.AncestryChanged:Connect(function()
+		if not Button:IsDescendantOf(game) then
+			if FOVCircle then
+				FOVCircle:Remove()
+			end
+			RunService:UnbindFromRenderStep("AimbotLoop")
+		end
+	end)
+	
+	-- Handle viewport changes
+	Camera:GetPropertyChangedSignal("ViewportSize"):Connect(function()
+		if FOVCircle then
+			FOVCircle.Position = Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y/2)
+		end
+	end)
+end;
+task.spawn(C_13);
+-- StarterGui.zynx.Frame.Frame.autoaim.LocalScript
+local function C_15()
+local script = G2L["15"];
+	-- Auto Aim Script - Parent under button
+	local Button = script.Parent
+	
+	-- Services
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local Workspace = game:GetService("Workspace")
+	local LocalPlayer = Players.LocalPlayer
+	local Camera = workspace.CurrentCamera
+	
+	-- Settings
+	local AutoAimActive = false
+	local CurrentTarget = nil
+	local Smoothness = 0.35
+	local FOVRadius = 190 -- Changed from 230 to 190
+	local FOVCircle = nil
+	
+	-- Create FOV circle
+	local function CreateFOV()
+		FOVCircle = Drawing.new("Circle")
+		FOVCircle.Visible = false
+		FOVCircle.Transparency = 0.8
+		FOVCircle.Color = Color3.new(1, 1, 1) -- Pure white
+		FOVCircle.Thickness = 2.6
+		FOVCircle.NumSides = 64
+		FOVCircle.Radius = FOVRadius
+		FOVCircle.Filled = false
+	end
+	
+	-- Check if player is alive
+	local function IsAlive(player)
+		if not player.Character then return false end
+		local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+		return humanoid and humanoid.Health > 0
+	end
+	
+	-- Get random body part (torso or head)
+	local function GetTargetBodyPart(character)
+		if not character then return nil end
+	
+		local bodyParts = {
+			character:FindFirstChild("UpperTorso"),
+			character:FindFirstChild("Torso"),
+			character:FindFirstChild("Head")
+		}
+	
+		local validParts = {}
+		for _, part in ipairs(bodyParts) do
+			if part then
+				table.insert(validParts, part)
+			end
+		end
+	
+		if #validParts > 0 then
+			return validParts[math.random(1, #validParts)]
+		end
+	
+		return character:FindFirstChild("HumanoidRootPart")
+	end
+	
+	-- Check if target is above the local player
+	local function IsAboveLocalPlayer(targetPart)
+		if not LocalPlayer.Character then return false end
+		local localTorso = LocalPlayer.Character:FindFirstChild("UpperTorso") or LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+		if not localTorso then return false end
+	
+		local heightDifference = targetPart.Position.Y - localTorso.Position.Y
+		return heightDifference > -5
+	end
+	
+	-- Check line of sight - NO WALLBANG
+	local function HasLineOfSight(targetPart)
+		if not LocalPlayer.Character or not targetPart then return false end
+	
+		local cameraPos = Camera.CFrame.Position
+		local targetPos = targetPart.Position
+		local direction = (targetPos - cameraPos).Unit
+		local distance = (targetPos - cameraPos).Magnitude
+	
+		-- Don't target if too far
+		if distance > 500 then return false end
+	
+		local raycastParams = RaycastParams.new()
+		raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+		raycastParams.FilterDescendantsInstances = {LocalPlayer.Character}
+		raycastParams.IgnoreWater = true
+	
+		local raycastResult = Workspace:Raycast(cameraPos, direction * distance, raycastParams)
+	
+		-- If raycast hits nothing, we have clear line of sight
+		if not raycastResult then
+			return true
+		end
+	
+		-- Check if what we hit is the target player
+		local hitPart = raycastResult.Instance
+		local hitCharacter = hitPart:FindFirstAncestorWhichIsA("Model")
+	
+		-- If we hit the target player, we have line of sight
+		if hitCharacter and hitCharacter == targetPart.Parent then
+			return true
+		end
+	
+		-- If we hit something else (wall, object), NO line of sight
+		return false
+	end
+	
+	-- Find best target in FOV (closest with line of sight)
+	local function FindBestTarget()
+		local center = Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y/2)
+		local closestDist = math.huge
+		local bestTarget = nil
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer and IsAlive(player) and player.Character then
+				local targetPart = GetTargetBodyPart(player.Character)
+				if targetPart then
+					if not IsAboveLocalPlayer(targetPart) then
+						continue
+					end
+	
+					local pos, onScreen = Camera:WorldToViewportPoint(targetPart.Position)
+					if onScreen then
+						local screenPos = Vector2.new(pos.X, pos.Y)
+						local dist = (screenPos - center).Magnitude
+						if dist <= FOVRadius and dist < closestDist then
+							-- CHECK LINE OF SIGHT BEFORE TARGETING
+							if HasLineOfSight(targetPart) then
+								closestDist = dist
+								bestTarget = player
+							end
+						end
+					end
+				end
+			end
+		end
+	
+		return bestTarget
+	end
+	
+	-- Auto aim at target (strong lock-on)
+	local function AutoAimAtTarget()
+		if not CurrentTarget or not CurrentTarget.Character then 
+			CurrentTarget = FindBestTarget()
+			return 
+		end
+	
+		local targetPart = GetTargetBodyPart(CurrentTarget.Character)
+		if not targetPart then 
+			CurrentTarget = FindBestTarget()
+			return 
+		end
+	
+		-- Check if target is still alive AND has line of sight
+		if not IsAlive(CurrentTarget) or not HasLineOfSight(targetPart) then
+			CurrentTarget = FindBestTarget()
+			return
+		end
+	
+		local currentCF = Camera.CFrame
+		local cameraPos = currentCF.Position
+		local targetPos = targetPart.Position
+	
+		-- Add slight offset for head/torso
+		if targetPart.Name == "Head" then
+			targetPos = targetPos + Vector3.new(0, -0.3, 0) -- Center of head
+		elseif targetPart.Name == "UpperTorso" or targetPart.Name == "Torso" then
+			targetPos = targetPos + Vector3.new(0, 0.8, 0) -- Upper chest
+		end
+	
+		-- STRONG LOCK-ON: Direct interpolation with dynamic speed
+		local currentLook = currentCF.LookVector
+		local targetDir = (targetPos - cameraPos).Unit
+	
+		-- Calculate angle to target
+		local angleToTarget = math.acos(math.clamp(currentLook:Dot(targetDir), -1, 1))
+	
+		-- Dynamic smoothness: very fast when far, slower when close
+		local dynamicSmoothness = Smoothness
+		if angleToTarget > 0.8 then -- Very far from target
+			dynamicSmoothness = Smoothness * 2.0 -- Fast acquisition
+		elseif angleToTarget > 0.3 then -- Medium distance
+			dynamicSmoothness = Smoothness * 1.5
+		else -- Close to target
+			dynamicSmoothness = Smoothness * 0.9 -- Tight lock
+		end
+	
+		-- Strong linear interpolation for better lock-on
+		local newLook = currentLook:Lerp(targetDir, dynamicSmoothness)
+	
+		-- Apply with slight smoothing to avoid jitter
+		Camera.CFrame = CFrame.new(cameraPos, cameraPos + newLook)
+	end
+	
+	-- Main auto aim loop
+	local function AutoAimLoop()
+		if FOVCircle then
+			FOVCircle.Position = Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y/2)
+			FOVCircle.Visible = AutoAimActive
+		end
+	
+		if AutoAimActive then
+			AutoAimAtTarget()
+		else
+			CurrentTarget = nil
+		end
+	end
+	
+	-- Toggle function with button color changes
+	local function ToggleAutoAim()
+		AutoAimActive = not AutoAimActive
+	
+		if AutoAimActive then
+			-- Enable - green
+			Button.BackgroundColor3 = Color3.new(0, 1, 0) -- Full green
+	
+			if not FOVCircle then
+				CreateFOV()
+			end
+			FOVCircle.Visible = true
+			RunService:BindToRenderStep("AutoAimLoop", 1, AutoAimLoop)
+		else
+			-- Disable - red
+			Button.BackgroundColor3 = Color3.new(1, 0, 0) -- Full red
+	
+			if FOVCircle then
+				FOVCircle.Visible = false
+			end
+			RunService:UnbindFromRenderStep("AutoAimLoop")
+			CurrentTarget = nil
+		end
+	end
+	
+	-- Connect button
+	Button.MouseButton1Click:Connect(ToggleAutoAim)
+	
+	-- Initial button state: starts off red (disabled)
+	Button.BackgroundColor3 = Color3.new(1, 0, 0) -- Full red
+	
+	-- Cleanup
+	Button.AncestryChanged:Connect(function()
+		if not Button:IsDescendantOf(game) then
+			if FOVCircle then
+				FOVCircle:Remove()
+			end
+			RunService:UnbindFromRenderStep("AutoAimLoop")
+		end
+	end)
+	
+	-- Handle viewport changes
+	Camera:GetPropertyChangedSignal("ViewportSize"):Connect(function()
+		if FOVCircle then
+			FOVCircle.Position = Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y/2)
+		end
+	end)
+end;
+task.spawn(C_15);
+-- StarterGui.zynx.Frame.Close.LocalScript
+local function C_18()
+local script = G2L["18"];
+	local close = script.Parent
+	
+	close.MouseButton1Click:Connect(function()
+		close.Parent.Visible = false
+		close.Parent.Parent.Enabled = false
+	end)
+end;
+task.spawn(C_18);
+
+return G2L["1"], require;
